@@ -1,7 +1,7 @@
 node
 {
-	  emailext body: "Cought Error: ${err}", subject: 'Build failed', to: 'ashutosh.kumar@pb.com'
-	try{
+	  
+	try{ emailext body: "Cought Error: ${err}", subject: 'Build failed', to: 'ashutosh.kumar@pb.com'
           stage('Project Name')
           {
             echo 'Complete CICD Pipeline'
