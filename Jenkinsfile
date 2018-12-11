@@ -1,7 +1,7 @@
 node
 {
 	  
-	try{ emailext body: "Cought Error: ${err}", subject: 'Build failed', to: 'ashutosh.kumar@pb.com'
+	try{ 
           stage('Project Name')
           {
             echo 'Complete CICD Pipeline'
@@ -12,7 +12,7 @@ node
          }
          stage('Build Code')
          {
-           sh 'mvn clean installing -Dmaven.test.failure.ignore=true'
+           sh 'mvn clean install -Dmaven.test.failure.ignore=true'
          }
          stage ('Archieve_it')
         {
