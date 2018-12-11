@@ -8,7 +8,7 @@ node
 
           stage('Checkout Code')
          {
-           git 'https://github.com/AshutoshKumar99/CompleteCICDPipeline'
+           git 'https://github.com/AshutoshKumar99/CICD-WhenBuildFails'
          }
 
          stage('Build Code')
