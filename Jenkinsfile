@@ -5,18 +5,14 @@ node
           {
             echo 'Complete CICD Pipeline'
           }
-
           stage('Checkout Code')
          {
            git 'https://github.com/AshutoshKumar99/CICD-WhenBuildFails'
          }
-
          stage('Build Code')
          {
-
            sh 'mvn clean installing -Dmaven.test.failure.ignore=true'
          }
-
          stage ('Archieve_it')
         {
           archive "target/**/*"
