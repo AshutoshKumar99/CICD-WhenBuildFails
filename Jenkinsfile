@@ -1,5 +1,6 @@
 node
 {
+	  emailext body: "Cought Error: ${err}", subject: 'Build failed', to: 'ashutosh.kumar@pb.com'
 	try{
           stage('Project Name')
           {
