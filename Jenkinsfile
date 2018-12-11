@@ -35,8 +35,6 @@ node
        {
         sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@13.233.162.162:/var/lib/tomcat8/webapps/'
        }  
-   }  
-	} catch (err) {
+   }  } catch (err) {
 	    emailext body: "Cought Error: ${err}", subject: 'Build failed', to: 'ashutosh.kumar@pb.com'
-	  }
-}
+	  }}
