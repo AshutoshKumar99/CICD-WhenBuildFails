@@ -12,7 +12,7 @@ node
          }
          stage('Build Code')
          {
-           sh 'mvn clean installing -Dmaven.test.failure.ignore=true'
+           sh 'mvn clean install -Dmaven.test.failure.ignore=true'
          }
          stage ('Archieve_it')
         {
