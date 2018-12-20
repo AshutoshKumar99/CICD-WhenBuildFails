@@ -30,7 +30,7 @@ node
       {  
 	  sshagent(['apachetomcat']) 
        {
-        sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@13.233.92.33:/var/lib/tomcat8/webapps/'
+        sh 'scp -o StrictHostKeyChecking=no target/*.war ubuntu@13.233.95.186:/var/lib/tomcat8/webapps/'
        }  
    }  } catch (err) {
 	    emailext body: "Cought Error: ${err}", subject: 'Build failed', to: 'ashutosh.kumar@pb.com'
